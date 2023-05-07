@@ -11,17 +11,7 @@ class Graph():
         self.adjacency_matrix[i][j] = 1
         self.adjacency_matrix[j][i] = 1
 
-    def DFS(self):
-        pass
-    def BFS(self):
-        pass
-    def print_graph_simple(self):
 
-        for i,row in enumerate(self.adjacency_matrix):
-            for val in row:
-                print(val, end=' ')
-            print()
-        pass
     def print_graph_beauty(self):
         print(tabulate(self.adjacency_matrix, headers='firstrow', tablefmt='grid'))
     def show_graphical(self):
