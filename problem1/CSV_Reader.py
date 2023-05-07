@@ -6,7 +6,7 @@ class CSV_Reader():
     def open_file(self):
         self.file_handler = open(self.csv_filename,"r")
         self.csv_reader = csv.reader(self.file_handler)
-    def splip_head(self):
+    def skip_head(self):
         try:
             next(self.csv_reader)
         except:
