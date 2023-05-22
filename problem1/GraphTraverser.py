@@ -55,5 +55,5 @@ class GraphTraverser():
         label_dict = {}
         for i,node in enumerate(node_names):
             label_dict[i] = node
-        nx.draw(graph,labels=label_dict, with_labels=True)
+        nx.draw(graph,labels=label_dict, with_labels=True,node_size=3000,font_size = 23)
         plt.savefig(f"{filename}.png")

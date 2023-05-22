@@ -1,11 +1,11 @@
 import numpy as np
 class Aligner():
-    def __init__(self,seq1,seq2):
+    def __init__(self,seq1,seq2, match_reward = 1, gap_penalty = -1, mismatch_penalty=-1):
         self.seq1 = seq1
         self.seq2 = seq2
-        self.match_reward = 1
-        self.gap_penalty = -1
-        self.mismatch_penalty = -1
+        self.match_reward = match_reward
+        self.gap_penalty = gap_penalty
+        self.mismatch_penalty = mismatch_penalty
     def init_matrix(self):
         n = len(self.seq1)
         m = len(self.seq2)

@@ -21,5 +21,5 @@ class Graph():
         label_dict = {}
         for i,node in enumerate(self.node_names):
             label_dict[i] = node
-        nx.draw(graph,labels=label_dict, with_labels=True)
+        nx.draw(graph,labels=label_dict, with_labels=True ,node_size = 2000,font_size = 25)
         plt.savefig("Graph.png")
